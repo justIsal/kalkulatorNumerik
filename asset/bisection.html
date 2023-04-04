@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="flex items-center justify-around h-14 bg-orange-400 text-white">
+        <h1>KALKULATOR</h1>
+        <ul class="flex">
+            <li><a href="../index.html" class="mx-2 py-1 px-4 hover:text-black">Home</a></li>
+            <li><a href="regulafalsi.html" class="mx-2 py-1 px-4 hover:text-black">Regulafalsi</a></li>
+            <li><a href="bisection.html" class="mx-2 py-1 px-4 hover:text-black">Bisection</a></li>
+            <li><a href="newton.html" class="mx-2 py-1 px-4 hover:text-black">Newthon</a></li>
+            <li><a href="secant.html" class="mx-2 py-1 px-4 hover:text-black">Secant</a></li>
+            <li><a href="contact.html" class="mx-2 py-1 px-4 hover:text-black">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="text-center p-6 font-semibold text-6xl">BISECTION</h1>
+    </div>
+    <form class="bg-slate-200 p-4 flex flex-col w-80 mx-auto my-8 rounded-md shadow-md">
+        <label>Masukan function ( f(x2) )</label>
+        <input type="text" class="px-2 py-1 mb-4 focus:outline-none focus:ring-1 focus:ring-orange-300 " id="function">
+        <label>Masukan e</label>
+        <input type="text" class="px-2 py-1 mb-4 " id="e">
+        <label>Masukan X1</label>
+        <input type="text" class="px-2 py-1 mb-4 " id="x1">
+        <label>Masukan Xn+1</label>
+        <input type="text" class="px-2 py-1 mb-4 " id="x2">
+        <input type="submit" class="bg-amber-500 text-white px-8 py-2 hover:bg-amber-300 cursor-pointer rounded-sm"
+            id="submit">
+    </form>
+    <table class="border-separate border-spacing-2 border border-slate-500 mx-auto my-4" id="table">
+        <thead>
+            <tr>
+                <th class="border border-slate-600 px-2">No.</th>
+                <th class="border border-slate-600 px-2">x1</th>
+                <th class="border border-slate-600 px-2">x2</th>
+                <th class="border border-slate-600 px-2">xt</th>
+                <th class="border border-slate-600 px-2">fx1</th>
+                <th class="border border-slate-600 px-2">fx2</th>
+                <th class="border border-slate-600 px-2">fxt</th>
+                <th class="border border-slate-600 px-2">cek</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <script src="js/bisection.js"></script>
+</body>
+
+</html>
